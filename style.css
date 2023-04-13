@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(255, 254, 252);
+}
+
+.container {
+    margin: 0 auto;
+    padding: 1em;
+    width: 375px;
+    max-width: 90%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.container-header {
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 3em;
+}
+
+.nav-items {
+    padding: 6em 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+    list-style: none
+}
+
+.nav-item {
+    margin: 0.5em 0;
+    padding: 0.75em 0.75em;
+    color: black;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.nav-item:hover {
+    color: rgb(240, 79, 39);
+}
+
+.menu {
+    padding: 1em 0.25em;    
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.menu-open, .menu-close, .nav-items {
+    z-index: 9;
+}
+
+.menu-close {
+    display: none;
+    position: fixed;
+    top: 1em;
+    right: 2.75em;
+}
+
+/* Main */
+.img-web3 {
+    margin: 0.5em auto 1.75em;;
+    display: flex;
+    width: 300px;
+    max-width: 90%;
+}
+
+.img-web3-desktop {
+    display: none;
+}
+
+.main-sec-1-title {
+    margin-bottom: 0.65em;
+    font-size: 1.95rem;
+    text-align: center;
+}
+
+.main-sec-1-info {
+    margin-bottom: 1.5em;
+    color: rgb(54, 67, 67);
+    line-height: 1.5rem;    
+}
+
+.main-sec-1-btn {
+    margin: 0.5em 0 1.5em;
+    padding: 0.95em 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: rgb(240, 93, 56);
+    color: white;
+    border: none;
+    transition: 450ms ease-in-out;
+}
+
+.main-sec-1-btn:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.main-sec-2 {
+    margin: 1.5em 0;
+    padding: 1em;
+    background-color: rgb(4, 4, 22);
+}
+
+.main-sec-2-title {
+    margin-bottom: 1em;
+    color: rgb(237, 174, 16);
+}
+
+.news-articles {
+    list-style: none;
+}
+
+.na1, .na2 {
+    margin-bottom: 1.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid lightslategrey;
+}
+
+.na3 {
+    margin-bottom: 1em;
+}
+
+.news-article a {
+    font-weight: 600;
+    color: white;
+    transition: 450ms ease-in-out;
+}
+
+.news-article a:hover {
+    color: rgb(237, 174, 16);
+}
+
+.news-article p {
+    margin-top: 0.65em;
+    color: rgb(156, 156, 156);
+}
+
+/* Trending Section */
+.trending-page, .trending-page-all-info {
+    display: flex;
+}
+
+.trending-page {
+    margin: 1em 0 2em;
+}
+
+.trending-page-img {
+    margin-right: 1.25em;
+}
+
+.trending-page-img-set {
+    width: 150px;
+}
+
+.trending-page-all-info {
+    flex-direction: column;
+}
+
+.trending-page-number {
+    margin-bottom: 0.95em;
+    font-size: 1.5rem;
+    color: darkgray;
+}
+
+.trending-page-title {
+    margin-bottom: 0.95em;  
+    line-height: 1.6em;  
+}
+
+.trending-page-title a {
+    padding: 1em 0;
+    font-size: 1.075rem;
+    color: black;
+    transition: 350ms ease-in-out;
+}
+
+.trending-page-title a:hover {
+    color: rgb(240, 93, 56);
+}
+
+.trending-page-info {
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: rgb(85, 85, 85);
+}
+
+/* JavaScript */
+.slide .nav-items {
+    transform: translateX(32%);
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.display {
+    display: initial;
+}
+
+/* Media Queries */
+@media (min-width: 650px) {
+    .container {
+        width: 550px;
+        padding: 0.85em;
+    }
+    .nav-items {
+        display: flex;
+        padding: unset;
+        position: unset;
+        transform: translateX(0);
+    }
+    .nav-item {
+        font-size: 0.9rem;
+    }
+    .menu-open {
+        display: none;
+    }
+    .menu-close {
+        display: none;
+    }
+    .overlay {
+        position: unset;
+    }
+    .slide .nav-items {
+        transform: translateX(0);
+    }
+    .img-web3 {
+        display: none;
+    }
+    .img-web3-desktop {
+        margin: 0.95em auto 2.5em;
+        display: initial;
+        max-width: 550px;
+        width: 100%;
+    }
+    .main-sec-1-title {
+        font-size: 2rem;
+    }
+    .main-sec-1-info {
+        font-size: 1.05rem;
+    }
+    .main-sec-2 {
+        padding: 2em;
+    }
+    .main-sec-2-title {
+        font-size: 1.65rem;
+    }
+    .news-article a {
+        font-size: 1.1rem;
+    }
+    .news-article p {
+        line-height: 1.45rem;
+    }
+    .trending-page-title a {
+        font-size: 1.25rem;
+    }
+    .trending-page-info {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 1020px) {
+    .container {
+        width: 1300px;
+    }
+    .container-header {
+        padding: 1.75em 0.85em 0.85em;
+    }
+    .logo {
+        width: 3.5em;
+    }
+    .img-web3 {
+        display: none;
+    }
+    .img-web3-desktop {
+        display: initial;
+        max-width: unset;
+    }
+    .main-sec {
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+    }
+    .main-sec-1 {
+        max-width: 800px;
+        width: 94%;
+    }
+    .main-sec-1-all-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-sec-1-title {
+        max-width: 310px;
+        font-size: 3.15rem;
+        text-align: unset;
+    }
+    .main-sec-1-sub-div {
+    max-width: 450px;
+    width: 50%;
+    }
+    .main-sec-1-info {
+        font-size: 1.1rem;
+        line-height: 1.85rem;
+    }
+    .main-sec-2 {
+        margin: 0.95em 0;
+        padding: 1em 1.15em;
+    }
+    .trending-pages {
+        margin: 2em 0 3em;
+        display: flex;
+        gap: 2.25em;
+    }
+    .trending-page-img-set {
+        width: 100%;
+        height: 100%;
+    }
+    .trending-page-all-info {
+        width: 88%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .main-sec-2 {
+        padding: 1em 2em;
+    }
+    .main-sec-2-title {
+        font-size: 2.45rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .main-sec-2 {
+        padding: 1em 2em;
+    }
+    .main-sec-2-title {
+        font-size: 2.45rem;
+    }
+    .news-article a {
+        font-size: 1.3rem;
+    }
+    .news-article p {
+        font-size: 1.05rem;
+    }
+}

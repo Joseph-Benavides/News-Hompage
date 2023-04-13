@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>News Homepage</title>
+
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+
+</head>
+<body>
+
+<header>
+  <div class="container container-header">
+    <img src="./assets/images/logo.svg" alt="News Homepage Logo" class="logo">
+    <nav class="navbar">
+      <ul class="nav-items">
+        <a href="#"><li class="nav-item home">Home</li></a>
+        <a href="#"><li class="nav-item new">New</li></a>
+        <a href="#"><li class="nav-item popular">Popular</li></a>
+        <a href="#"><li class="nav-item trending">Trending</li></a>
+        <a href="#"><li class="nav-item categories">Categories</li></a>        
+      </ul>
+    </nav>
+    <img src="./assets/images/icon-menu.svg" alt="" class="menu menu-open">
+    <img src="./assets/images/icon-menu-close.svg" alt="" class="menu menu-close">
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="main-sec">
+
+      <div class="main-sec-1">
+        <img src="./assets/images/image-web-3-mobile.jpg" alt="" class="img-web3">
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="img-web3-desktop">
+        <div class="main-sec-1-all-info">
+          <h1 class="main-sec-1-title">The Bright Future of Web 3.0?</h1>
+          <div class="main-sec-1-sub-div">
+          <p class="main-sec-1-info">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <button class="main-sec-1-btn">Read More</button>                 
+          </div>
+        </div>
+      </div>
+
+      <div class="main-sec-2">
+        <h2 class="main-sec-2-title">New</h2>
+        <ul class="news-articles">
+          <li class="news-article na1">
+            <a href="#">Hydrogen VS Electric Cars</a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </li>
+          <li class="news-article na2">
+            <a href="#">The Downsides of AI Artistry</a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+          </li>
+          <li class="news-article na3">
+            <a href="#">Is VC Funding Drying Up?</a>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<section class="section">
+  <div class="container">
+    <div class="trending-pages">
+
+      <div class="trending-page">
+        <div class="trending-page-img">
+          <img src="./assets/images/image-retro-pcs.jpg" alt="" class="trending-page-img-set">          
+        </div>
+        <div class="trending-page-all-info">
+          <h3 class="trending-page-number">01</h3>
+          <h4 class="trending-page-title"><a href="#">Reviving Retro PCs</a></h4>
+          <p class="trending-page-info">What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+
+      <div class="trending-page">
+        <div class="trending-page-img">
+          <img src="./assets/images/image-top-laptops.jpg" alt="" class="trending-page-img-set">          
+        </div>
+        <div class="trending-page-all-info">
+          <h3 class="trending-page-number">02</h3>
+          <h4 class="trending-page-title"><a href="#">Top 10 PCs of 2022</a></h4>
+          <p class="trending-page-info">Our best picks for various needs and budgets.</p>          
+        </div>
+      </div>
+
+      <div class="trending-page">
+        <div class="trending-page-img">
+          <img src="./assets/images/image-gaming-growth.jpg" alt="" class="trending-page-img-set">          
+        </div>
+        <div class="trending-page-all-info">
+        <h3 class="trending-page-number">03</h3>
+        <h4 class="trending-page-title"><a href="#">The Growth of Gaming</a></h4>
+        <p class="trending-page-info">How the pandemic has sparked fresh opportunities.</p>          
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="overlay"></div>  
+  <script src="index.js"></script>
+</body>
+</html>
